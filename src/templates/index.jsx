@@ -72,9 +72,29 @@ class IndexTemplate extends React.Component {
               <MainNav overlay={config.siteCover}>
                 <BlogLogo logo={config.siteLogo} title={config.siteTitle} />
                 <MenuButton
-                  navigation={config.siteNavigation}
-                  onClick={this.handleOnClick}
+                  // navigation={config.siteNavigation}
+                  // onClick={this.handleOnClick}
+                  text="MOUNTAIN"
                 />
+                <MenuButton
+                  text="BEACH"
+                />
+                <MenuButton
+                  text="SPORTS"
+                />
+                <MenuButton
+                  text="COMMUNITY"
+                />
+                <MenuButton
+                  text="MY TRIPS"
+                />
+                <MenuButton
+                  text="SIGN IN"
+                />
+                <MenuButton
+                  text="SIGN UP"
+                />
+
               </MainNav>
               <div className="vertical">
                 <div className="main-header-content inner">
