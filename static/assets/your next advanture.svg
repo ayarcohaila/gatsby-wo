@@ -1,0 +1,40 @@
+<svg id="Group_49" data-name="Group 49" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79 79">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke: #707070;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke-dasharray: 0 4;
+      }
+
+      .cls-3 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Path_56" data-name="Path 56" class="cls-1" d="M78,55h0a5.326,5.326,0,0,1-5.31,5.31H6.31A5.326,5.326,0,0,1,1,55H1" transform="translate(0 17.689)"/>
+  <line id="Line_21" data-name="Line 21" class="cls-1" x2="4.912" transform="translate(11.621 19.586)"/>
+  <line id="Line_22" data-name="Line 22" class="cls-1" x2="28.676" transform="translate(38.703 19.586)"/>
+  <path id="Path_57" data-name="Path 57" class="cls-1" d="M6.31,9A5.326,5.326,0,0,0,1,14.31V70.069a5.31,5.31,0,1,1,10.621,0V14.31A5.326,5.326,0,0,0,6.31,9Z" transform="translate(0 2.621)"/>
+  <path id="Path_58" data-name="Path 58" class="cls-1" d="M56.31,9A5.326,5.326,0,0,0,51,14.31V70.069a5.31,5.31,0,1,1,10.621,0V14.31A5.326,5.326,0,0,0,56.31,9Z" transform="translate(16.379 2.621)"/>
+  <line id="Line_23" data-name="Line 23" class="cls-1" x1="7.965" y2="7.965" transform="translate(30.207 50.121)"/>
+  <line id="Line_24" data-name="Line 24" class="cls-1" x2="7.965" y2="7.965" transform="translate(30.207 50.121)"/>
+  <path id="Path_59" data-name="Path 59" class="cls-2" d="M22.965,47.552h0A7.989,7.989,0,0,0,15,55.517h0a7.989,7.989,0,0,0,7.965,7.965H33.586A13.315,13.315,0,0,0,46.862,50.207V34.276A13.315,13.315,0,0,1,60.138,21h2.655" transform="translate(4.586 6.552)"/>
+  <g id="Group_50" data-name="Group 50" transform="translate(16.533 1)">
+    <g id="Group_49-2" data-name="Group 49" transform="translate(0 9.293)">
+      <path id="Path_60" data-name="Path 60" class="cls-3" d="M28.814,11.3c5.576,3.452,4.912,7.567,11.55,13.94a1.411,1.411,0,0,1,0,1.859h0a3.807,3.807,0,0,1-4.647.531A20.884,20.884,0,0,1,32,24.841c.133,1.726-.4,11.417-.664,15.8a2.212,2.212,0,0,1-2.257,2.124h0a2.326,2.326,0,0,1-2.257-2.257V24.841m-5.178,6.372H19.786A3.231,3.231,0,0,1,16.6,28.028V23.381M26.822,33.736H24.964a3.231,3.231,0,0,1-3.186-3.186V24.178" transform="translate(-11.422 -6.919)"/>
+      <path id="Path_61" data-name="Path 61" class="cls-3" d="M17.878,29.772H16.55c-1.726,0-2.788-1.328-3.186-3.186a49.063,49.063,0,0,1-.664-9.028,14.709,14.709,0,0,1,1.859-6.372A4.636,4.636,0,0,1,15.886,8H30.622a4.636,4.636,0,0,1,1.328,3.186v2.522" transform="translate(-12.7 -8)"/>
+      <line id="Line_25" data-name="Line 25" class="cls-1" y1="1.991" transform="translate(20.578 15.931)"/>
+      <path id="Path_62" data-name="Path 62" class="cls-1" d="M16.584,10.9h-.4Q13.8,10.9,13,13.688" transform="translate(-12.602 -7.05)"/>
+    </g>
+    <path id="Path_63" data-name="Path 63" class="cls-1" d="M14,4V9.31H32.586V4" transform="translate(-12.274 -0.017)"/>
+    <path id="Path_64" data-name="Path 64" class="cls-1" d="M13,1V4.983H34.241V1" transform="translate(-12.602 -1)"/>
+  </g>
+</svg>
