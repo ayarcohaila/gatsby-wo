@@ -16,6 +16,8 @@ import PageTitle from "../components/PageTitle/PageTitle";
 import PageDescription from "../components/PageDescription/PageDescription";
 import PaginatedContent from "../layouts/PaginatedContent/PaginatedContent";
 import SocialMediaIcons from "../components/SocialMediaIcons/SocialMediaIcons";
+import ViewButton from "../components/ViewButton/ViewButton";
+import Activities from "../layouts/Activities/Activities";
 
 class IndexTemplate extends React.Component {
   state = {
@@ -58,7 +60,7 @@ class IndexTemplate extends React.Component {
 
     return (
       <Drawer className="home-template" isOpen={this.state.menuOpen}>
-        <Helmet title={config.siteTitle} />
+        <Helmet title="HOME" />
         <SEO postEdges={nodes} />
 
         {/* The blog navigation links */}
@@ -98,12 +100,14 @@ class IndexTemplate extends React.Component {
               </MainNav>
               <div className="vertical">
                 <div className="main-header-content inner">
+
                   <PageTitle text={config.siteTitle} />
-                  <PageDescription text={config.siteDescription} />
-                  <SocialMediaIcons
+                  <PageDescription text="$ 1,100" />
+                  {/* <SocialMediaIcons
                     urls={config.siteSocialUrls}
                     color="currentColor"
-                  />
+                  /> */}
+                  <ViewButton text="VIEW TRIP" />
                 </div>
               </div>
               <Link
@@ -117,20 +121,8 @@ class IndexTemplate extends React.Component {
                 <span className="hidden">Scroll Down</span>
               </Link>
             </MainHeader>
-
-            <PaginatedContent
-              page={page}
-              pages={pages}
-              total={total}
-              limit={limit}
-              prev={prev}
-              next={next}
-            >
-              {/* PostListing component renders all the posts */}
-              <PostListing postEdges={nodes} postAuthors={authorsEdges} />
-            </PaginatedContent>
           </div>
-
+          <Activities />
           {/* The tiny footer at the very bottom */}
           <Footer
             copyright={config.copyright}
