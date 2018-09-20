@@ -1,0 +1,26 @@
+.activitie-layout {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0 13px 40px #0000001a;
+  margin: 0 40px;
+  padding: 20px 60px;
+  z-index: 10;
+  text-align: center;
+}
+
+.activitie-layout h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.activitie-layout span {
+  margin-bottom: 20px;
+}
+
+.activities {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
