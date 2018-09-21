@@ -18,6 +18,13 @@ import PaginatedContent from "../layouts/PaginatedContent/PaginatedContent";
 import SocialMediaIcons from "../components/SocialMediaIcons/SocialMediaIcons";
 import ViewButton from "../components/ViewButton/ViewButton";
 import Activities from "../layouts/Activities/Activities";
+import Destinations from "../layouts/Destinations/Destinations";
+import Adventures from "../layouts/Adventures/Adventures";
+import Articles from "../layouts/Articles/Articles";
+import Community from "../layouts/Community/Community";
+
+
+import './index.css';
 
 class IndexTemplate extends React.Component {
   state = {
@@ -123,11 +130,25 @@ class IndexTemplate extends React.Component {
             </MainHeader>
           </div>
           <Activities />
+          <div className="destination-content">
+            <h2>
+              Featured destinations
+            </h2>
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing<br />
+              elit quisque congue massa quis nisi vehicula
+            </span>
+          </div>
+          <Destinations />
+
+          <Adventures />
+          <Articles />
+          <Community />
           {/* The tiny footer at the very bottom */}
-          <Footer
+          {/* <Footer
             copyright={config.copyright}
             promoteGatsby={config.promoteGatsby}
-          />
+          /> */}
         </SiteWrapper>
       </Drawer>
     );
