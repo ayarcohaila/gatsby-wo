@@ -1,0 +1,30 @@
+.adventures-header {
+  background-image: url('../../../static/assets/adventures/Your_Next_Adventure.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 80px;
+}
+
+.adventures-header img {
+  width: 56px;
+  margin-right: 10px;
+}
+
+.adventures-header-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.adventures-header-title h2 {
+  margin-bottom: 0;
+}
+
+.adventures-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 80px;
+}
