@@ -6,6 +6,7 @@
     background: #fff;
     -webkit-transition: -webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
+    text-align: center;
 }
 
 .nav-opened .site-wrapper {
