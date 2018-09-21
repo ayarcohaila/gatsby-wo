@@ -2,16 +2,16 @@ module.exports = {
   blogPostDir: "sample-posts", // The name of directory that contains your posts.
   blogAuthorDir: "sample-authors", // The name of directory that contains your 'authors' folder.
   blogAuthorId: "casper", // The default and fallback author ID used for blog posts without a defined author.
-  siteTitle: "Gatsby Casper Starter", // Site title.
+  siteTitle: "Himalayan Villages Cultural Exploration", // Site title.
   siteTitleAlt: "GatsbyJS Casper Theme Starter", // Alternative site title for SEO.
   siteLogo:
-    "https://haysclark.github.io/gatsby-starter-casper/logos/logo-1024.png", // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
+    "/assets/LOGO.svg", // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
   siteUrl: "https://haysclark.github.io", // Domain of your website without pathPrefix.
   pathPrefix: "/gatsby-starter-casper", // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.
   siteDescription:
     "A Casper themed GatsbyJS stater based on the Advanced Starter.", // Website description used for RSS feeds/meta description tag.
   siteCover:
-    "https://haysclark.github.io/gatsby-starter-casper/images/blog-cover.jpg", // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
+    "/assets/background.svg", // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   siteNavigation: true, // If navigation is enabled the Menu button will be visible
   siteRss: "/rss.xml", // Path to the RSS file.
   siteRssAuthor: "Casper User", // The author name used in the RSS file
@@ -51,5 +51,55 @@ module.exports = {
   },
   themeColor: "#c62828", // Used for setting manifest and progress theme colors.
   backgroundColor: "#e0e0e0", // Used for setting manifest background color.
-  promoteGatsby: true // Enables the GatsbyJS promotion information in footer.
+  promoteGatsby: true, // Enables the GatsbyJS promotion information in footer.
+
+  activities: {
+    Mountain: "/assets/activities/Mountain.svg",
+    Beach: "/assets/activities/Beach.svg",
+    City: "/assets/activities/City.svg",
+    Sports: "/assets/activities/Sports.svg",
+    Camping: "/assets/activities/Camping.svg",
+  },
+  destinations: {
+    1: {
+      images: [
+          "/assets/destinations/destinations1.svg",
+          "/assets/destinations/destinations2.svg",
+          "/assets/destinations/destinations3.svg",
+        ],
+      topic: "ASIA",
+      title: "Discover Asia",
+      description: "Its beautiful.",
+    },
+    2: {
+      images: [
+          "/assets/destinations/destinations4.svg",
+          "/assets/destinations/destinations5.svg",
+          "/assets/destinations/destinations6.svg",
+        ],
+      topic: "FEATURED ACTIVITIES",
+      title: "Adventure with friends",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue massa quis nisi vehicula, dictum fermentum dolor vestibulum. Morbi pulvinar sapien feugiat, blandit justo quis, dapibus nibh.",
+    },
+  },
+  adventures: {
+    1: "/assets/adventures/image1.svg",
+    2: "/assets/adventures/image2.svg",
+    3: "/assets/adventures/image3.svg",
+    4: "/assets/adventures/image4.svg",
+    5: "/assets/adventures/image5.svg",
+    6: "/assets/adventures/image6.svg",
+  },
+  articles: {
+    1: "/assets/articles/article1.svg",
+    2: "/assets/articles/article2.svg",
+    3: "/assets/articles/article3.svg",
+    4: "/assets/articles/article4.svg",
+  },
+  community: {
+    1: "/assets/community/question1.svg",
+    2: "/assets/community/question2.svg",
+    3: "/assets/community/question3.svg",
+    4: "/assets/community/question4.svg",
+  }
 };

@@ -1,0 +1,12 @@
+.activity-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.activity-panel img {
+  width: 56px;
+  margin-bottom: 20px;
+}

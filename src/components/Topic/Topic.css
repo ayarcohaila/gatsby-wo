@@ -1,0 +1,51 @@
+.topic {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.topic .slick-prev, .topic .slick-next {
+  background-color: #E5E5E5;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.topic-image img {
+  width: 400px;
+  height: 400px;
+}
+
+.topic .slick-slider {
+  width: 400px;
+  margin-right: 40px;
+}
+
+.topic-content {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 60px 20px;
+}
+
+.topic-content h2 {
+  font-size: 45px;
+}
+
+.topic-content img {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+}
+
+.topic-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.topic-description {
+  font-size: 16px;
+}

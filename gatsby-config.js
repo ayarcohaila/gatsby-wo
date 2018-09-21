@@ -81,12 +81,12 @@ module.exports = {
         display: "minimal-ui",
         icons: [
           {
-            src: "/logos/logo-192x192.png",
+            src: "/assets/LOGO.svg",
             sizes: "192x192",
             type: "image/png"
           },
           {
-            src: "/logos/logo-512x512.png",
+            src: "/assets/LOGO.svg",
             sizes: "512x512",
             type: "image/png"
           }

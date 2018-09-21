@@ -37,7 +37,8 @@
 /* When the navigation is closed */
 .nav-closed .menu-button {
     color: #fff;
-    border-color: rgba(255, 255, 255, 0.6);
+    /* border-color: rgba(255, 255, 255, 0.6); */
+    border: none;
 }
 
 .nav-closed .menu-button:hover {
@@ -71,10 +72,10 @@
     opacity: 0;
     transition: all 0.3s ease;
 }
-
+/*
 .icon-menu::before {
     content: "\f609";
-}
+} */
 
 /* ==========================================================================
       Media Queries - Smaller than 500px
