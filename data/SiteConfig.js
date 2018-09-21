@@ -59,5 +59,47 @@ module.exports = {
     City: "/assets/activities/City.svg",
     Sports: "/assets/activities/Sports.svg",
     Camping: "/assets/activities/Camping.svg",
+  },
+  destinations: {
+    1: {
+      images: [
+          "/assets/destinations/destinations1.svg",
+          "/assets/destinations/destinations2.svg",
+          "/assets/destinations/destinations3.svg",
+        ],
+      topic: "ASIA",
+      title: "Discover Asia",
+      description: "Its beautiful.",
+    },
+    2: {
+      images: [
+          "/assets/destinations/destinations4.svg",
+          "/assets/destinations/destinations5.svg",
+          "/assets/destinations/destinations6.svg",
+        ],
+      topic: "FEATURED ACTIVITIES",
+      title: "Adventure with friends",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue massa quis nisi vehicula, dictum fermentum dolor vestibulum. Morbi pulvinar sapien feugiat, blandit justo quis, dapibus nibh.",
+    },
+  },
+  adventures: {
+    1: "/assets/adventures/image1.svg",
+    2: "/assets/adventures/image2.svg",
+    3: "/assets/adventures/image3.svg",
+    4: "/assets/adventures/image4.svg",
+    5: "/assets/adventures/image5.svg",
+    6: "/assets/adventures/image6.svg",
+  },
+  articles: {
+    1: "/assets/articles/article1.svg",
+    2: "/assets/articles/article2.svg",
+    3: "/assets/articles/article3.svg",
+    4: "/assets/articles/article4.svg",
+  },
+  community: {
+    1: "/assets/community/question1.svg",
+    2: "/assets/community/question2.svg",
+    3: "/assets/community/question3.svg",
+    4: "/assets/community/question4.svg",
   }
 };
