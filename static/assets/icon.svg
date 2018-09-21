@@ -1,0 +1,29 @@
+<svg id="Group_51" data-name="Group 51" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.263 19.263">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #ff4c00;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #ff4c00;
+        font-size: 4px;
+        font-family: Seravek;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Rectangle_144" data-name="Rectangle 144" class="cls-1" transform="translate(0 0)">
+    <rect class="cls-3" width="19.263" height="19.263" rx="9.631"/>
+    <rect class="cls-4" x="1" y="1" width="17.263" height="17.263" rx="8.631"/>
+  </g>
+  <text id="icon" class="cls-2" transform="translate(4.533 10.232)"><tspan x="0" y="0">icon</tspan></text>
+</svg>

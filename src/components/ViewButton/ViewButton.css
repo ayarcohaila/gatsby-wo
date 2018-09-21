@@ -1,0 +1,14 @@
+.view-button {
+  width: 210px;
+  height: 60px;
+  background-color: #FF4C00;
+  border-radius: 5px;
+  box-shadow: 0 13px 16px #ff4c001a;
+  font-size: 28px;
+  font-weight: bold;
+  transition: all 0.2s ease-in;
+}
+
+.view-button:hover {
+  background-color: #dca131;
+}

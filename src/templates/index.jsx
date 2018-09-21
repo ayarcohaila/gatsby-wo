@@ -16,6 +16,15 @@ import PageTitle from "../components/PageTitle/PageTitle";
 import PageDescription from "../components/PageDescription/PageDescription";
 import PaginatedContent from "../layouts/PaginatedContent/PaginatedContent";
 import SocialMediaIcons from "../components/SocialMediaIcons/SocialMediaIcons";
+import ViewButton from "../components/ViewButton/ViewButton";
+import Activities from "../layouts/Activities/Activities";
+import Destinations from "../layouts/Destinations/Destinations";
+import Adventures from "../layouts/Adventures/Adventures";
+import Articles from "../layouts/Articles/Articles";
+import Community from "../layouts/Community/Community";
+
+
+import './index.css';
 
 class IndexTemplate extends React.Component {
   state = {
@@ -58,7 +67,7 @@ class IndexTemplate extends React.Component {
 
     return (
       <Drawer className="home-template" isOpen={this.state.menuOpen}>
-        <Helmet title={config.siteTitle} />
+        <Helmet title="HOME" />
         <SEO postEdges={nodes} />
 
         {/* The blog navigation links */}
@@ -72,18 +81,40 @@ class IndexTemplate extends React.Component {
               <MainNav overlay={config.siteCover}>
                 <BlogLogo logo={config.siteLogo} title={config.siteTitle} />
                 <MenuButton
-                  navigation={config.siteNavigation}
-                  onClick={this.handleOnClick}
+                  // navigation={config.siteNavigation}
+                  // onClick={this.handleOnClick}
+                  text="MOUNTAIN"
                 />
+                <MenuButton
+                  text="BEACH"
+                />
+                <MenuButton
+                  text="SPORTS"
+                />
+                <MenuButton
+                  text="COMMUNITY"
+                />
+                <MenuButton
+                  text="MY TRIPS"
+                />
+                <MenuButton
+                  text="SIGN IN"
+                />
+                <MenuButton
+                  text="SIGN UP"
+                />
+
               </MainNav>
               <div className="vertical">
                 <div className="main-header-content inner">
+
                   <PageTitle text={config.siteTitle} />
-                  <PageDescription text={config.siteDescription} />
-                  <SocialMediaIcons
+                  <PageDescription text="$ 1,100" />
+                  {/* <SocialMediaIcons
                     urls={config.siteSocialUrls}
                     color="currentColor"
-                  />
+                  /> */}
+                  <ViewButton text="VIEW TRIP" />
                 </div>
               </div>
               <Link
@@ -97,25 +128,27 @@ class IndexTemplate extends React.Component {
                 <span className="hidden">Scroll Down</span>
               </Link>
             </MainHeader>
-
-            <PaginatedContent
-              page={page}
-              pages={pages}
-              total={total}
-              limit={limit}
-              prev={prev}
-              next={next}
-            >
-              {/* PostListing component renders all the posts */}
-              <PostListing postEdges={nodes} postAuthors={authorsEdges} />
-            </PaginatedContent>
           </div>
+          <Activities />
+          <div className="destination-content">
+            <h2>
+              Featured destinations
+            </h2>
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing<br />
+              elit quisque congue massa quis nisi vehicula
+            </span>
+          </div>
+          <Destinations />
 
+          <Adventures />
+          <Articles />
+          <Community />
           {/* The tiny footer at the very bottom */}
-          <Footer
+          {/* <Footer
             copyright={config.copyright}
             promoteGatsby={config.promoteGatsby}
-          />
+          /> */}
         </SiteWrapper>
       </Drawer>
     );
