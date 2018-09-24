@@ -20,7 +20,13 @@ class Articles extends React.Component {
           </span>
         </div>
         <div className="article-content">
-          {Object.values(articles).map(item => (<Article imgUrl={item} title="Title Article" />))}
+          {Object.values(articles).map(item => (
+            <Article
+              key={item}
+              imgUrl={item}
+              title="Title Article"
+            />
+          ))}
         </div>
       </div>
     );

@@ -3,7 +3,7 @@ import Helmet from "react-helmet";
 import PostListing from "../components/PostListing/PostListing";
 import config from "../../data/SiteConfig";
 import Drawer from "../layouts/Drawer/Drawer";
-import Navigation from "../components/Navigation/Navigation";
+// import Navigation from "../components/Navigation/Navigation";
 import SiteWrapper from "../layouts/SiteWrapper/SiteWrapper";
 import MainHeader from "../layouts/MainHeader/MainHeader";
 import MainNav from "../layouts/MainNav/MainNav";
@@ -21,31 +21,31 @@ import Footer from "../components/Footer/Footer";
 import SocialMediaIcons from "../components/SocialMediaIcons/SocialMediaIcons";
 
 class AuthorTemplate extends React.Component {
-  state = {
-    menuOpen: false
-  };
+  // state = {
+  //   menuOpen: false
+  // };
 
-  handleOnClick = evt => {
-    evt.stopPropagation();
-    if (this.state.menuOpen) {
-      this.closeMenu();
-    } else {
-      this.openMenu();
-    }
-  };
+  // handleOnClick = evt => {
+  //   evt.stopPropagation();
+  //   if (this.state.menuOpen) {
+  //     this.closeMenu();
+  //   } else {
+  //     this.openMenu();
+  //   }
+  // };
+  //
+  // handleOnClose = evt => {
+  //   evt.stopPropagation();
+  //   this.closeMenu();
+  // };
 
-  handleOnClose = evt => {
-    evt.stopPropagation();
-    this.closeMenu();
-  };
-
-  openMenu = () => {
-    this.setState({ menuOpen: true });
-  };
-
-  closeMenu = () => {
-    this.setState({ menuOpen: false });
-  };
+  // openMenu = () => {
+  //   this.setState({ menuOpen: true });
+  // };
+  //
+  // closeMenu = () => {
+  //   this.setState({ menuOpen: false });
+  // };
 
   render() {
     const { author, cover } = this.props.pathContext;
@@ -65,7 +65,7 @@ class AuthorTemplate extends React.Component {
         <Helmet title={`Posts by "${author}" | ${config.siteTitle}`} />
 
         {/* The blog navigation links */}
-        <Navigation config={config} onClose={this.handleOnClose} />
+        {/* <Navigation config={config} onClose={this.handleOnClose} /> */}
 
         <SiteWrapper>
           <MainHeader className="author-head" cover={cover}>
