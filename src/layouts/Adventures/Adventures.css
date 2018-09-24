@@ -1,8 +1,13 @@
+.adventures {
+  max-width: 1190px;
+}
+
 .adventures-header {
   background-image: url('../../../static/assets/adventures/Your_Next_Adventure.svg');
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 80px;
+  width: 100%;
 }
 
 .adventures-header img {

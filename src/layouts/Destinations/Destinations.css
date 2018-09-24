@@ -3,6 +3,7 @@
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 40px;
+  max-width: 1750px;
 }
 
 .destinations .slick-prev, .destinations .slick-next {
@@ -10,6 +11,28 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
+}
+.destinations .slick-next,
+.destinations .slick-prev {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  z-index: 10;
+}
+.destinations .slick-next {
+  background-image: url('/assets/right.svg');
+}
+.destinations .slick-prev {
+  background-image: url('/assets/left.svg');
+}
+
+.destinations .slick-prev::before,
+.destinations .slick-next::before {
+  content: '';
+}
+
+.destinations .slick-prev::before, .destinations .slick-next::before {
+  font-size: 48px;
 }
 
 .destination-image img {
