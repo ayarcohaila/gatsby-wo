@@ -620,6 +620,7 @@ button {
 .vertical {
     display: table-cell;
     vertical-align: middle;
+    height: 80vh;
 }
 
 /* ==========================================================================
