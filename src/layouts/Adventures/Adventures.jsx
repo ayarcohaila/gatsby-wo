@@ -23,6 +23,7 @@ class Adventures extends React.Component {
         <div className="adventures-content">
           {Object.values(adventures).map(item => (
             <Adventure
+              key={item}
               imgUrl={item}
               title="Beach"
               description="something something"

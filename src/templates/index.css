@@ -1,6 +1,14 @@
+.home-template {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .destination-content {
   background-image: url('../../static/assets/destinations/Featured_destinations.svg');
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 80px;
+  width: 100%;
 }

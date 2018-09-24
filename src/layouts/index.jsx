@@ -45,6 +45,7 @@ export default class MainLayout extends React.Component {
         <Helmet>
           {/* <title>{`${config.siteTitle} |  ${this.getLocalTitle()}`}</title> */}
           <title>HOME</title>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
           <meta name="description" content={config.siteDescription} />
         </Helmet>
         {children()}

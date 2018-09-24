@@ -22,6 +22,7 @@ class Community extends React.Component {
         <div className="article-content">
           {Object.values(community).map(item => (
             <Article
+              key={item}
               imgUrl={item}
               title="Question"
             />

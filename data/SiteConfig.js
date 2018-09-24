@@ -6,43 +6,43 @@ module.exports = {
   siteTitleAlt: "GatsbyJS Casper Theme Starter", // Alternative site title for SEO.
   siteLogo:
     "/assets/LOGO.svg", // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
-  siteUrl: "https://haysclark.github.io", // Domain of your website without pathPrefix.
+  // siteUrl: "https://haysclark.github.io", // Domain of your website without pathPrefix.
   pathPrefix: "/gatsby-starter-casper", // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.
   siteDescription:
     "A Casper themed GatsbyJS stater based on the Advanced Starter.", // Website description used for RSS feeds/meta description tag.
   siteCover:
     "/assets/background.svg", // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   siteNavigation: true, // If navigation is enabled the Menu button will be visible
-  siteRss: "/rss.xml", // Path to the RSS file.
+  // siteRss: "/rss.xml", // Path to the RSS file.
   siteRssAuthor: "Casper User", // The author name used in the RSS file
   // siteFBAppID: "1825356251115265", // optional, sets the FB Application ID for using app insights
   sitePaginationLimit: 10, // The max number of posts per page.
   googleAnalyticsID: "UA-111982167-1", // GA tracking ID.
   // disqusShortname: "https-vagr9k-github-io-gatsby-advanced-starter", // enables Disqus comments, visually deviates from original Casper theme.
-  siteSocialUrls: [
-    "https://github.com/haysclark/gatsby-starter-casper",
-    "https://twitter.com/gatsbyjs",
-    "mailto:gatsbyjs@example.com"
-  ],
+  // siteSocialUrls: [
+  //   "https://github.com/haysclark/gatsby-starter-casper",
+  //   "https://twitter.com/gatsbyjs",
+  //   "mailto:gatsbyjs@example.com"
+  // ],
   postDefaultCategoryID: "Tech", // Default category for posts.
   // Links to social profiles/projects you want to display in the navigation bar.
-  userLinks: [
-    {
-      label: "GitHub",
-      url: "https://github.com/haysclark/gatsby-starter-casper",
-      iconClassName: "fa fa-github" // Disabled, see Navigation.jsx
-    },
-    {
-      label: "Twitter",
-      url: "https://twitter.com/gatsbyjs",
-      iconClassName: "fa fa-twitter" // Disabled, see Navigation.jsx
-    },
-    {
-      label: "Email",
-      url: "mailto:gatsbyjs@example.com",
-      iconClassName: "fa fa-envelope" // Disabled, see Navigation.jsx
-    }
-  ],
+  // userLinks: [
+  //   {
+  //     label: "GitHub",
+  //     url: "https://github.com/haysclark/gatsby-starter-casper",
+  //     iconClassName: "fa fa-github" // Disabled, see Navigation.jsx
+  //   },
+  //   {
+  //     label: "Twitter",
+  //     url: "https://twitter.com/gatsbyjs",
+  //     iconClassName: "fa fa-twitter" // Disabled, see Navigation.jsx
+  //   },
+  //   {
+  //     label: "Email",
+  //     url: "mailto:gatsbyjs@example.com",
+  //     iconClassName: "fa fa-envelope" // Disabled, see Navigation.jsx
+  //   }
+  // ],
   // Copyright string for the footer of the website and RSS feed.
   copyright: {
     label: "Gatsby Casper Starter" // Label used before the year
@@ -101,5 +101,39 @@ module.exports = {
     2: "/assets/community/question2.svg",
     3: "/assets/community/question3.svg",
     4: "/assets/community/question4.svg",
-  }
+  },
+
+  sliderData: [
+    {
+      id: 0,
+      header: 'Himalayan Villages Cultural Exploration',
+      body: 'per person',
+      color: '#242846',
+      img: '/assets/background.svg'
+    }, {
+      id: 1,
+      header: 'Himalayan Villages Cultural Exploration',
+      body: 'Himalayan Villages Cultural Exploration',
+      color: '#ba9077',
+      img: '/assets/background2.svg'
+    }, {
+      id: 2,
+      header: 'Himalayan Villages Cultural Exploration',
+      body: 'per person',
+      color: '#1ABC9C',
+      img: '/assets/background.svg'
+    }, {
+      id: 3,
+      header: 'Himalayan Villages Cultural Exploration',
+      body: 'per person',
+      color: '#C0392B',
+      img: '/assets/background2.svg'
+    }, {
+      id: 4,
+      header: 'Himalayan Villages Cultural Exploration',
+      body: 'per person',
+      color: '#513B56',
+      img: '/assets/background.svg'
+    }
+  ],
 };

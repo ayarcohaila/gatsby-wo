@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.365 28.365">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 8px;
+        font-family: Seravek;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_16" data-name="Group 16" transform="translate(-331 -331.635)">
+    <g id="Rectangle_144" data-name="Rectangle 144" class="cls-1" transform="translate(331 331.635)">
+      <rect class="cls-3" width="28.365" height="28.365" rx="11"/>
+      <rect class="cls-4" x="1" y="1" width="26.365" height="26.365" rx="10"/>
+    </g>
+    <text id="icon" class="cls-2" transform="translate(337.674 347.812)"><tspan x="0" y="0">icon</tspan></text>
+  </g>
+</svg>
