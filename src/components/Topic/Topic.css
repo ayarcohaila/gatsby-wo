@@ -20,6 +20,8 @@
 .topic .slick-slider {
   width: 400px;
   margin-right: 40px;
+  display: flex;
+  align-items: center;
 }
 
 .topic-content {

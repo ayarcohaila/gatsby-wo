@@ -1,135 +1,78 @@
 import React from "react";
 import Helmet from "react-helmet";
-import { Link } from "react-scroll";
-import PostListing from "../components/PostListing/PostListing";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 import Drawer from "../layouts/Drawer/Drawer";
-import Navigation from "../components/Navigation/Navigation";
 import SiteWrapper from "../layouts/SiteWrapper/SiteWrapper";
-import Footer from "../components/Footer/Footer";
 import MainHeader from "../layouts/MainHeader/MainHeader";
 import MainNav from "../layouts/MainNav/MainNav";
 import BlogLogo from "../components/BlogLogo/BlogLogo";
 import MenuButton from "../components/MenuButton/MenuButton";
-import PageTitle from "../components/PageTitle/PageTitle";
-import PageDescription from "../components/PageDescription/PageDescription";
-import PaginatedContent from "../layouts/PaginatedContent/PaginatedContent";
-import SocialMediaIcons from "../components/SocialMediaIcons/SocialMediaIcons";
-import ViewButton from "../components/ViewButton/ViewButton";
 import Activities from "../layouts/Activities/Activities";
 import Destinations from "../layouts/Destinations/Destinations";
 import Adventures from "../layouts/Adventures/Adventures";
 import Articles from "../layouts/Articles/Articles";
 import Community from "../layouts/Community/Community";
+import VerticalSlider from "../layouts/VerticalSlider/VerticalSlider";
 
 
 import './index.css';
 
 class IndexTemplate extends React.Component {
-  state = {
-    menuOpen: false
-  };
-
-  handleOnClick = evt => {
-    evt.stopPropagation();
-    if (this.state.menuOpen) {
-      this.closeMenu();
-    } else {
-      this.openMenu();
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeID: 0,
+      wrapperStyle: `url('${config.sliderData[0].img}')`,
+      buttonHover: false,
     }
-  };
+  }
 
-  handleOnClose = evt => {
-    evt.stopPropagation();
-    this.closeMenu();
-  };
-
-  openMenu = () => {
-    this.setState({ menuOpen: true });
-  };
-
-  closeMenu = () => {
-    this.setState({ menuOpen: false });
-  };
+  changeActive = (id) => {
+    this.setState({
+      activeID: id,
+      wrapperStyle: `url('${config.sliderData[id].img}')`,
+      panelStyle: {
+        backgroundColor: config.sliderData[id].color
+      }
+    });
+  }
 
   render() {
-    const {
-      nodes,
-      page,
-      pages,
-      total,
-      limit,
-      prev,
-      next
-    } = this.props.pathContext;
-    const authorsEdges = this.props.data.authors.edges;
+    // const { nodes } = this.props.pathContext;
+    const { wrapperStyle, activeID } = this.state;
 
     return (
       <Drawer className="home-template" isOpen={this.state.menuOpen}>
-        <Helmet title="HOME" />
-        <SEO postEdges={nodes} />
-
-        {/* The blog navigation links */}
-        <Navigation config={config} onClose={this.handleOnClose} />
+        {/* <Helmet title="HOME" />
+        <SEO postEdges={nodes} /> */}
 
         <SiteWrapper>
           {/* All the main content gets inserted here */}
           <div className="home-template">
             {/* The big featured header */}
-            <MainHeader cover={config.siteCover}>
-              <MainNav overlay={config.siteCover}>
+            <MainHeader cover={config.wrapperStyle}>
+              <MainNav overlay={config.wrapperStyle}>
                 <BlogLogo logo={config.siteLogo} title={config.siteTitle} />
-                <MenuButton
-                  // navigation={config.siteNavigation}
-                  // onClick={this.handleOnClick}
-                  text="MOUNTAIN"
-                />
-                <MenuButton
-                  text="BEACH"
-                />
-                <MenuButton
-                  text="SPORTS"
-                />
-                <MenuButton
-                  text="COMMUNITY"
-                />
-                <MenuButton
-                  text="MY TRIPS"
-                />
-                <MenuButton
-                  text="SIGN IN"
-                />
-                <MenuButton
-                  text="SIGN UP"
-                />
-
+                <MenuButton text="SIGN UP" />
+                <MenuButton text="SIGN IN" />
+                <MenuButton text="MY TRIPS" />
+                <MenuButton text="COMMUNITY" />
+                <MenuButton text="SPORTS" />
+                <MenuButton text="BEACH" />
+                <MenuButton text="MOUNTAIN" />
               </MainNav>
               <div className="vertical">
-                <div className="main-header-content inner">
-
-                  <PageTitle text={config.siteTitle} />
-                  <PageDescription text="$ 1,100" />
-                  {/* <SocialMediaIcons
-                    urls={config.siteSocialUrls}
-                    color="currentColor"
-                  /> */}
-                  <ViewButton text="VIEW TRIP" />
-                </div>
+                <VerticalSlider
+                  wrapperStyle={wrapperStyle}
+                  activeID={activeID}
+                  changeActive={this.changeActive}
+                  sliderData={config.sliderData}
+                />
               </div>
-              <Link
-                className="scroll-down icon-arrow-left"
-                to="content"
-                data-offset="-45"
-                spy
-                smooth
-                duration={500}
-              >
-                <span className="hidden">Scroll Down</span>
-              </Link>
             </MainHeader>
+            <Activities />
           </div>
-          <Activities />
           <div className="destination-content">
             <h2>
               Featured destinations
@@ -140,15 +83,9 @@ class IndexTemplate extends React.Component {
             </span>
           </div>
           <Destinations />
-
           <Adventures />
           <Articles />
           <Community />
-          {/* The tiny footer at the very bottom */}
-          {/* <Footer
-            copyright={config.copyright}
-            promoteGatsby={config.promoteGatsby}
-          /> */}
         </SiteWrapper>
       </Drawer>
     );
